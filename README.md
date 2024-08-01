@@ -21,17 +21,17 @@ cd GokafkaNotifer
 ## Start Docker Services
 - Make sure Docker Desktop is up and running, then start the services:
 ```sh
-docker-compose up -d
+make kafka
 ```
 
 ## Run the Producer
 ```sh
-go run cmd/producer/producer.go
+make producer
 ```
 
 ## Run the Consumer
 ```sh
-go run cmd/consumer/consumer.go
+make consumer
 ```
 
 ## Test the Application
